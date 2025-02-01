@@ -4,6 +4,7 @@
   "description": "A collection of NextJS components we'll use across pages.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
