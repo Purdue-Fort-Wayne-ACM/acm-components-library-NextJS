@@ -1,3 +1,4 @@
+"use client";
 import {
   testButton_default
 } from "./chunk-5U5YGXUH.mjs";
