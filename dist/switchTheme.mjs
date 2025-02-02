@@ -1,7 +1,6 @@
-// src/switchTheme.tsx
-function switchTheme(theme) {
-  document.documentElement.setAttribute("data-theme", theme);
-}
-export {
+import {
   switchTheme
+} from "./chunk-HBVTISWD.mjs";
+export {
+  switchTheme as default
 };

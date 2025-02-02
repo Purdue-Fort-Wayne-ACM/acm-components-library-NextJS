@@ -19,13 +19,9 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/switchTheme.tsx
 var switchTheme_exports = {};
 __export(switchTheme_exports, {
-  switchTheme: () => switchTheme
+  default: () => switchTheme
 });
 module.exports = __toCommonJS(switchTheme_exports);
 function switchTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
 }
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  switchTheme
-});
