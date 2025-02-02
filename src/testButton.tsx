@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
-import "../themes.css"; // Ensure the styles are included
+import "../styles.css"; // Ensure the styles are included
 
 export default function Button({ children }: { children: React.ReactNode }) {
   const themeContext = useContext(ThemeContext);
