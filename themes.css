@@ -1,0 +1,19 @@
+/* themes.css */
+:root {
+    --primary-color: #0070f3;
+    --background-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #1e90ff;
+    --background-color: #121212;
+    --text-color: #ffffff;
+  }
+  
+  [data-theme="solarized"] {
+    --primary-color: #268bd2;
+    --background-color: #002b36;
+    --text-color: #839496;
+  }
+  

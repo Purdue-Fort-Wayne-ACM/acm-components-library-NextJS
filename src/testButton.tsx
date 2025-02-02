@@ -1,5 +1,6 @@
 "use client"; // src/testButton.tsx
 import React from "react";
+import "../themes.css"; // 
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ type ButtonProps = {
 
 const testButton: React.FC<ButtonProps> = ({ children, onClick }) => {
   return (
-    <button className="px-4 py-2 bg-blue-500 text-white rounded" onClick={onClick}>
+    <button cclassName="button" onClick={onClick}>
       {children}
     </button>
   );
