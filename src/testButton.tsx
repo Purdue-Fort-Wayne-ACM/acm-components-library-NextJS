@@ -12,7 +12,7 @@ export default function Button({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <button className="button" onClick={themeContext.toggleTheme}>
+    <button  className="button" onClick={themeContext.toggleTheme}>
       {children} (Current theme: {themeContext.theme})
     </button>
   );
