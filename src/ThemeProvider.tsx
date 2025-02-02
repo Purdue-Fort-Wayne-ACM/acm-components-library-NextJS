@@ -2,7 +2,7 @@
 
 import { useEffect, useState, React } from "react"; 
 
-export default function ThemeProvider({ children }: { children: React.ReactNode }) {
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<"light" | "dark" | "solarized">("light");
 
   useEffect(() => {
