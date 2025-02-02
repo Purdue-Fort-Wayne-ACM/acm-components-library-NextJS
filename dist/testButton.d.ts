@@ -1,9 +1,7 @@
 import React from 'react';
 
-type ButtonProps = {
+declare function Button({ children }: {
     children: React.ReactNode;
-    onClick?: () => void;
-};
-declare const testButton: React.FC<ButtonProps>;
+}): any;
 
-export { testButton as default };
+export { Button as default };

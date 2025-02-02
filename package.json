@@ -5,11 +5,14 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": ["dist", "themes.css"],
+  "files": [
+    "dist",
+    "themes.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src --dts --format esm,cjs" 
-  }, 
+    "build": "tsup src --dts --format esm,cjs"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

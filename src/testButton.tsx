@@ -1,18 +1,19 @@
 "use client"; // src/testButton.tsx
-import React from "react";
-import "../themes.css"; // 
 
-type ButtonProps = {
-  children: React.ReactNode;
-  onClick?: () => void;
-};
+import React, { useContext } from "react";
+import { ThemeContext } from "./ThemeProvider";
+import "../themes.css"; // Ensure the styles are included
 
-const testButton: React.FC<ButtonProps> = ({ children, onClick }) => {
+export default function Button({ children }: { children: React.ReactNode }) {
+  const themeContext = useContext(ThemeContext);
+
+  if (!themeContext) {
+    throw new Error("Button must be used within a ThemeProvider");
+  }
+
   return (
-    <button className="button" onClick={onClick}>
-      {children}
+    <button className="button" onClick={themeContext.toggleTheme}>
+      {children} (Current theme: {themeContext.theme})
     </button>
   );
-};
-
-export default testButton;
+}

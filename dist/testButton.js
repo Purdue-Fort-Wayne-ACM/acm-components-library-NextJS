@@ -20,11 +20,27 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/testButton.tsx
 var testButton_exports = {};
 __export(testButton_exports, {
-  default: () => testButton_default
+  default: () => Button
 });
 module.exports = __toCommonJS(testButton_exports);
+var import_react2 = require("react");
+
+// src/ThemeProvider.tsx
+var import_react = require("react");
 var import_jsx_runtime = require("react/jsx-runtime");
-var testButton = ({ children, onClick }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "button", onClick, children });
-};
-var testButton_default = testButton;
+var ThemeContext = import_react.React.createContext(null);
+
+// src/testButton.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
+function Button({ children }) {
+  const themeContext = (0, import_react2.useContext)(ThemeContext);
+  if (!themeContext) {
+    throw new Error("Button must be used within a ThemeProvider");
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("button", { className: "button", onClick: themeContext.toggleTheme, children: [
+    children,
+    " (Current theme: ",
+    themeContext.theme,
+    ")"
+  ] });
+}
