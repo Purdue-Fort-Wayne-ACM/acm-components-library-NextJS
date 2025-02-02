@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react"; 
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<"light" | "dark" | "solarized">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
