@@ -1,9 +1,25 @@
 /* themes.css */
 :root {
-    --primary-color: #0070f3;
-    --background-color: #ffffff;
-    --text-color: #000000;
-  }
+  --main-bg-color: #131313;
+  --main-font-color: #e6e6e6;
+  --main-hglt-color: #EBEBEB;
+
+  --main-link-color: #efefef;
+  --main-link-hglt-color: #f7f7f7;
+  --main-vstd-link-color: #bdbdbd;
+
+  --union-hglt-color: #cfb991;
+
+  --scnd-bg-color: #EFEFEF;
+  --scnd-font-color: #121212;
+  --scnd-hglt-color: #080808;
+  
+
+  --header-height: 90px;
+
+  --navbar-text-size: 18pt;
+  --navbar-img-size: 56pt;
+}
   
   [data-theme="dark"] {
     --primary-color: #1e90ff;
