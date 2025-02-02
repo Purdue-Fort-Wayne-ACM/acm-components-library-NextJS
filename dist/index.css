@@ -14,3 +14,13 @@
   --background-color: #002b36;
   --text-color: #839496;
 }
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
