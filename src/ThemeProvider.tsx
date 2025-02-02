@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, React } from "react"; 
+import React, { useEffect, useState } from "react"; 
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<"light" | "dark" | "solarized">("light");

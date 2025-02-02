@@ -1,7 +1,9 @@
 "use client";
+var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -15,6 +17,14 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/ThemeProvider.tsx
@@ -25,7 +35,7 @@ __export(ThemeProvider_exports, {
   default: () => ThemeProvider_default
 });
 module.exports = __toCommonJS(ThemeProvider_exports);
-var import_react = require("react");
+var import_react = __toESM(require("react"));
 var import_jsx_runtime = require("react/jsx-runtime");
 function ThemeProvider({ children }) {
   const [theme, setTheme] = (0, import_react.useState)("light");
@@ -44,7 +54,7 @@ function ThemeProvider({ children }) {
   };
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ThemeContext.Provider, { value: { theme, toggleTheme }, children });
 }
-var ThemeContext = import_react.React.createContext(null);
+var ThemeContext = import_react.default.createContext(null);
 var ThemeProvider_default = ThemeProvider;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
