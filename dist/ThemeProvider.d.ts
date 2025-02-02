@@ -5,4 +5,4 @@ declare function ThemeProvider({ children }: {
 }): any;
 declare const ThemeContext: any;
 
-export { ThemeContext, ThemeProvider as default };
+export { ThemeContext, ThemeProvider, ThemeProvider as default };

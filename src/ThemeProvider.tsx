@@ -28,3 +28,5 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 }
 
 export const ThemeContext = React.createContext<{ theme: string; toggleTheme: () => void } | null>(null);
+
+export default ThemeProvider;

@@ -1,9 +1,11 @@
 "use client";
 import {
   ThemeContext,
-  ThemeProvider
-} from "./chunk-3YM5Y6LH.mjs";
+  ThemeProvider,
+  ThemeProvider_default
+} from "./chunk-Q5X2UUF3.mjs";
 export {
   ThemeContext,
-  ThemeProvider as default
+  ThemeProvider,
+  ThemeProvider_default as default
 };

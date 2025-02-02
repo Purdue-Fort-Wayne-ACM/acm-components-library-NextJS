@@ -21,7 +21,8 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 var ThemeProvider_exports = {};
 __export(ThemeProvider_exports, {
   ThemeContext: () => ThemeContext,
-  default: () => ThemeProvider
+  ThemeProvider: () => ThemeProvider,
+  default: () => ThemeProvider_default
 });
 module.exports = __toCommonJS(ThemeProvider_exports);
 var import_react = require("react");
@@ -44,7 +45,9 @@ function ThemeProvider({ children }) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ThemeContext.Provider, { value: { theme, toggleTheme }, children });
 }
 var ThemeContext = import_react.React.createContext(null);
+var ThemeProvider_default = ThemeProvider;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  ThemeContext
+  ThemeContext,
+  ThemeProvider
 });
