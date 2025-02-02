@@ -25,6 +25,6 @@ __export(testButton_exports, {
 module.exports = __toCommonJS(testButton_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 var testButton = ({ children, onClick }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { cclassName: "button", onClick, children });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "button", onClick, children });
 };
 var testButton_default = testButton;
