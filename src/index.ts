@@ -2,4 +2,4 @@
 
 export { default as Button } from "./testButton";
 export { default as switchTheme } from "./switchTheme";
-export { ThemeProvider as ThemeProvider } from "./ThemeProvider";
+export { ThemeProvider } from "./ThemeProvider";
