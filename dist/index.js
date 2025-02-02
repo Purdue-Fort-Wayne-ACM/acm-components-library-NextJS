@@ -21,6 +21,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 var index_exports = {};
 __export(index_exports, {
   Button: () => Button,
+  ThemeProvider: () => ThemeProvider,
   switchTheme: () => switchTheme
 });
 module.exports = __toCommonJS(index_exports);
@@ -31,6 +32,23 @@ var import_react2 = require("react");
 // src/ThemeProvider.tsx
 var import_react = require("react");
 var import_jsx_runtime = require("react/jsx-runtime");
+function ThemeProvider({ children }) {
+  const [theme, setTheme] = (0, import_react.useState)("light");
+  (0, import_react.useEffect)(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+    }
+    document.documentElement.setAttribute("data-theme", storedTheme || "light");
+  }, []);
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ThemeContext.Provider, { value: { theme, toggleTheme }, children });
+}
 var ThemeContext = import_react.React.createContext(null);
 
 // src/testButton.tsx
@@ -55,5 +73,6 @@ function switchTheme(theme) {
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Button,
+  ThemeProvider,
   switchTheme
 });

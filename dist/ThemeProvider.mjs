@@ -5,5 +5,5 @@ import {
 } from "./chunk-3YM5Y6LH.mjs";
 export {
   ThemeContext,
-  ThemeProvider
+  ThemeProvider as default
 };
