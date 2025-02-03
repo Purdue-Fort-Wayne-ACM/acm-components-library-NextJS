@@ -10,6 +10,7 @@ export default function ACMFooter() {
                 <div className="internal-footerFlexItem">
                     <h4> </h4>
                     <Logo height={50}/>
+                    {/* TODO: Add social media bar*/}
                 </div>
                 <div className="internal-footerFlexItem">
                     <h4>Resources</h4>
