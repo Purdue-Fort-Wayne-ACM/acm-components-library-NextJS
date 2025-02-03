@@ -30,3 +30,28 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 export const ThemeContext = React.createContext<{ theme: string; toggleTheme: () => void } | null>(null);
 
 export default ThemeProvider;
+
+
+/* Example Use
+
+"use client"; // src/testButton.tsx
+
+import React, { useContext } from "react";
+import { ThemeContext } from "./ThemeProvider";
+import "../styles.css"; // Ensure the styles are included
+
+export default function Button({ children }: { children: React.ReactNode }) {
+  const themeContext = useContext(ThemeContext);
+
+  if (!themeContext) {
+    throw new Error("Button must be used within a ThemeProvider");
+  }
+
+  return (
+    <button  className="button" onClick={themeContext.toggleTheme}>
+      {children} (Current theme: {themeContext.theme})
+    </button>
+  );
+}
+
+*/

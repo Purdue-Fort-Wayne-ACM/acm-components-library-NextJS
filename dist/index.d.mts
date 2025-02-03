@@ -1,4 +1,5 @@
-export { default as Button } from './testButton.mjs';
-export { default as switchTheme } from './switchTheme.mjs';
 export { default as ThemeProvider } from './ThemeProvider.mjs';
+export { default as ACMFooter } from './Footer.mjs';
+export { default as Logo } from './Logo.mjs';
+export { default as AccessibilityWidget } from './AccessibilityWidget.mjs';
 import 'react';

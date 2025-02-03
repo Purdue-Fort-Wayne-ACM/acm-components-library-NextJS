@@ -1,12 +1,35 @@
 {
-    "compilerOptions": {
-      "outDir": "dist",
-      "module": "ESNext",
-      "target": "ESNext",
-      "declaration": true,
-      "jsx": "react-jsx",
-      "moduleResolution": "Node",
-      "esModuleInterop": true
-    },
-    "include": ["src"]
-  }
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ESNext",
+    "declaration": true,
+    "jsx": "preserve",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "src",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
