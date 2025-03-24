@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import "../styles.css";
 
-export default function ACMFooter() {
+export default function Footer() {
     // Explain PFW ACM owns site, isn't responsible for its content, give report email and point to poolicy
     return (
     <div className="internal-footerWrapper">
