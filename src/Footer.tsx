@@ -36,7 +36,7 @@ export default function Footer() {
                 </div>    
             </div>
 
-            <div className="internal-disclaimer">This is a PFW-ACM site. The views on this page do not represent the views of Purdue Fort Wayne. </div>
+            <div className="internal-disclaimer">This is a PFW-ACM site. The views on this page do not represent the views of Purdue Fort Wayne, but are sanctioned by a student organization within it. If there are concerns please contact acm@pfw.edu. </div>
              
         </footer>
     </div>

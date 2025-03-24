@@ -4,7 +4,7 @@
     "module": "ESNext",
     "target": "ESNext",
     "declaration": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "lib": [
