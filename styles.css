@@ -134,7 +134,7 @@ a:visited {
 
 .accessibilityButton {
   z-index: 100;
-  position: absfixedolute;
+  position: fixed;
   right: 28px;
   bottom: 28px;
   color: var(--main-link-hglt-color);
