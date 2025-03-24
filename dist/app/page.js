@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});"use client";var _jsxruntime = require('react/jsx-runtime');function e(){return _jsxruntime.jsx.call(void 0, _jsxruntime.Fragment,{})}exports.default = e;
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});"use client";function e(){return React.createElement(React.Fragment,null)}exports.default = e;

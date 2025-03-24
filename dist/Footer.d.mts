@@ -1,5 +1,5 @@
-import * as react_jsx_runtime from 'react/jsx-runtime';
+import React__default from 'react';
 
-declare function Footer(): react_jsx_runtime.JSX.Element;
+declare function Footer(): React__default.JSX.Element;
 
 export { Footer as default };

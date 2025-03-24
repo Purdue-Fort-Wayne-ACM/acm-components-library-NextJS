@@ -12,7 +12,7 @@ const AccessibilityWidget = () => {
 
   useEffect(() => {
     document.body.style.fontSize = `${fontSize}px`;
-    (document.body.childNodes as NodeListOf<HTMLElement>).forEach((e) => {e.style.filter = `${contrast}`});
+    (document.body.childNodes as NodeListOf<HTMLElement>).forEach((e) => {try{e.style.filter = `${contrast}`} catch(err){console.log(err)}});
     
   }, [fontSize, contrast]);
 

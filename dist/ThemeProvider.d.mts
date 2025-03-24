@@ -1,10 +1,9 @@
-import * as react_jsx_runtime from 'react/jsx-runtime';
-import React from 'react';
+import React__default from 'react';
 
 declare function ThemeProvider({ children }: {
-    children: React.ReactNode;
-}): react_jsx_runtime.JSX.Element;
-declare const ThemeContext: React.Context<{
+    children: React__default.ReactNode;
+}): React__default.JSX.Element;
+declare const ThemeContext: React__default.Context<{
     theme: string;
     toggleTheme: () => void;
 }>;

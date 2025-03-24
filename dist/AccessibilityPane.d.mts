@@ -1,7 +1,7 @@
-import * as react_jsx_runtime from 'react/jsx-runtime';
+import * as React$1 from 'react';
 
 declare function AccessibilityPane({ children, }: {
     children: React.ReactNode;
-}): react_jsx_runtime.JSX.Element;
+}): React$1.JSX.Element;
 
 export { AccessibilityPane as default };

@@ -1,5 +1,5 @@
-import * as react_jsx_runtime from 'react/jsx-runtime';
+import * as React from 'react';
 
-declare function ComponentTest(): react_jsx_runtime.JSX.Element;
+declare function ComponentTest(): React.JSX.Element;
 
 export { ComponentTest as default };

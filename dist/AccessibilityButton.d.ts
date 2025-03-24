@@ -1,5 +1,5 @@
-import * as react_jsx_runtime from 'react/jsx-runtime';
+import * as React from 'react';
 
-declare function AccessibilityButton(props: any): react_jsx_runtime.JSX.Element;
+declare function AccessibilityButton(props: any): React.JSX.Element;
 
 export { AccessibilityButton as default };

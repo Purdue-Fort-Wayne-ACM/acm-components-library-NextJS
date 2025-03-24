@@ -1,5 +1,5 @@
-import * as react_jsx_runtime from 'react/jsx-runtime';
+import React__default from 'react';
 
-declare const AccessibilityWidget: () => react_jsx_runtime.JSX.Element;
+declare const AccessibilityWidget: () => React__default.JSX.Element;
 
 export { AccessibilityWidget as default };
