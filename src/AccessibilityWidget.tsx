@@ -9,13 +9,12 @@ const AccessibilityWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [fontSize, setFontSize] = useState(16);
   const [contrast, setContrast] = useState('contrast(100%)');
-  const [filter, setFilter] = useState('');
 
   useEffect(() => {
     document.body.style.fontSize = `${fontSize}px`;
-    (document.body.childNodes as NodeListOf<HTMLElement>).forEach((e) => {e.style.filter = `${contrast} ${filter}`});
+    (document.body.childNodes as NodeListOf<HTMLElement>).forEach((e) => {e.style.filter = `${contrast}`});
     
-  }, [fontSize, contrast, filter]);
+  }, [fontSize, contrast]);
 
   const increaseFontSize = () => setFontSize(prev => Math.min(prev + 2, 24));
   const decreaseFontSize = () => setFontSize(prev => Math.max(prev - 2, 12));
@@ -24,9 +23,7 @@ const AccessibilityWidget = () => {
     setContrast(prev => prev === 'contrast(100%)' ? 'contrast(250%)' : 'contrast(100%)');
   };
 
-  const changeFilter = (newFilter) => {
-    setFilter(newFilter);
-  };
+
 
   return (
     <> 
