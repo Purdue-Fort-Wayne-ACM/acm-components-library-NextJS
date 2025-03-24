@@ -1,9 +1,9 @@
-import React__default from 'react';
+import React from 'react';
 
 declare function ThemeProvider({ children }: {
-    children: React__default.ReactNode;
-}): React__default.JSX.Element;
-declare const ThemeContext: React__default.Context<{
+    children: React.ReactNode;
+}): React.JSX.Element;
+declare const ThemeContext: React.Context<{
     theme: string;
     toggleTheme: () => void;
 }>;

@@ -1,1 +1,1 @@
-"use client";function e(){return React.createElement(React.Fragment,null)}export{e as default};
+"use client";import t from"react";function e(){return t.createElement(t.Fragment,null)}export{e as default};

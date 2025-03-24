@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 declare function AccessibilityButton(props: any): React.JSX.Element;
 

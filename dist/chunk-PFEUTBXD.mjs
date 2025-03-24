@@ -1,0 +1,1 @@
+import n from"react";function o(t){return n.createElement("div",{className:"A-ButtonContainer"},n.createElement("button",{className:"A-Button",onClick:t.onClick},n.createElement("span",{className:"A-icon-span"},t.icon),t.buttonText))}export{o as a};

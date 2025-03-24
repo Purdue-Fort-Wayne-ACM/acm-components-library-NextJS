@@ -1,4 +1,6 @@
 import "../styles.css"
+import React from 'react'
+
 export default function AccessibilityButton(props){
     return (
         <div className="A-ButtonContainer">

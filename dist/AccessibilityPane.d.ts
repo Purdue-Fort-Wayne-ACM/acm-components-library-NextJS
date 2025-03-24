@@ -1,7 +1,7 @@
-import * as React$1 from 'react';
+import React from 'react';
 
 declare function AccessibilityPane({ children, }: {
     children: React.ReactNode;
-}): React$1.JSX.Element;
+}): React.JSX.Element;
 
 export { AccessibilityPane as default };

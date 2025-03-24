@@ -1,0 +1,1 @@
+import{a as o}from"./chunk-VPL2HCPG.mjs";import r from"next/image";import i from"react";function s({width:t=50,height:m=50,className:e}){return i.createElement(r,{src:"/acmlogo_white.svg",width:t,height:m,alt:"Custom Icon",className:o("inline-block",e)})}export{s as a};

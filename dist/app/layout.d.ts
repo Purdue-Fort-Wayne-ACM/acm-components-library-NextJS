@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
-import React__default from 'react';
+import React from 'react';
 
 declare const metadata: Metadata;
 declare function RootLayout({ children }: {
-    children: React__default.ReactNode;
-}): React__default.JSX.Element;
+    children: React.ReactNode;
+}): React.JSX.Element;
 
 export { RootLayout as default, metadata };

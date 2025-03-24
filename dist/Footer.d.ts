@@ -1,5 +1,5 @@
-import React__default from 'react';
+import React from 'react';
 
-declare function Footer(): React__default.JSX.Element;
+declare function Footer(): React.JSX.Element;
 
 export { Footer as default };

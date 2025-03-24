@@ -1,5 +1,5 @@
-import React__default from 'react';
+import React from 'react';
 
-declare const AccessibilityWidget: () => React__default.JSX.Element;
+declare const AccessibilityWidget: () => React.JSX.Element;
 
 export { AccessibilityWidget as default };
