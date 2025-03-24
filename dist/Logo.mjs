@@ -1,7 +1,1 @@
-import {
-  Logo
-} from "./chunk-KBQNZYOO.mjs";
-import "./chunk-V7CNWJT3.mjs";
-export {
-  Logo as default
-};
+import{a}from"./chunk-IGYT5W7C.mjs";import"./chunk-VPL2HCPG.mjs";export{a as default};

@@ -1,10 +1,1 @@
-"use client";
-import {
-  AccessibilityWidget_default
-} from "./chunk-LCERHJ6I.mjs";
-import "./chunk-EOH2OEJX.mjs";
-import "./chunk-6XN6LGVP.mjs";
-import "./chunk-HCTWYXU2.mjs";
-export {
-  AccessibilityWidget_default as default
-};
+"use client";import{a}from"./chunk-FAZQQWZL.mjs";import"./chunk-RSWLXPYZ.mjs";import"./chunk-ZYEJZWEL.mjs";import"./chunk-HCTWYXU2.mjs";export{a as default};

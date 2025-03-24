@@ -1,9 +1,1 @@
-import {
-  Footer
-} from "./chunk-7XTZBOFU.mjs";
-import "./chunk-HCTWYXU2.mjs";
-import "./chunk-KBQNZYOO.mjs";
-import "./chunk-V7CNWJT3.mjs";
-export {
-  Footer as default
-};
+import{a}from"./chunk-VAANTYGN.mjs";import"./chunk-HCTWYXU2.mjs";import"./chunk-IGYT5W7C.mjs";import"./chunk-VPL2HCPG.mjs";export{a as default};

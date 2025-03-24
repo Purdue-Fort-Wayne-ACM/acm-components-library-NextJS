@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});var _jsxruntime = require('react/jsx-runtime');function c({children:i}){return _jsxruntime.jsx.call(void 0, _jsxruntime.Fragment,{children:_jsxruntime.jsx.call(void 0, "div",{className:"accessibilityPanel",children:i})})}exports.a = c;
