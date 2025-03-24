@@ -134,7 +134,7 @@ a:visited {
 
 .accessibilityButton {
   z-index: 100;
-  position: absolute;
+  position: absfixedolute;
   right: 28px;
   bottom: 28px;
   color: var(--main-link-hglt-color);
@@ -234,7 +234,7 @@ a:visited {
   z-index: 110;
   background-color:var(--scnd-bg-color);
   border-left: solid 1px black;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   overflow-y: scroll;
   scrollbar-width: thin;
