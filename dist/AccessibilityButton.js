@@ -22,14 +22,17 @@ __export(AccessibilityButton_exports, {
   default: () => AccessibilityButton
 });
 module.exports = __toCommonJS(AccessibilityButton_exports);
+var import_jsx_runtime = require("react/jsx-runtime");
 function AccessibilityButton(props) {
-  return /* @__PURE__ */ React.createElement("div", { className: "A-ButtonContainer" }, /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "A-ButtonContainer", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
     "button",
     {
       className: "A-Button",
-      onClick: props.onClick
-    },
-    /* @__PURE__ */ React.createElement("span", { className: "A-icon-span" }, props.icon),
-    props.buttonText
-  ));
+      onClick: props.onClick,
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "A-icon-span", children: props.icon }),
+        props.buttonText
+      ]
+    }
+  ) });
 }

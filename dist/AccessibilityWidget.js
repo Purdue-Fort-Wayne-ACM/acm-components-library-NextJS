@@ -1,9 +1,7 @@
 "use client";
-var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -17,14 +15,6 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  // If the importer is in node compatibility mode or this is not an ESM
-  // file that has been converted to a CommonJS file using a Babel-
-  // compatible transform (i.e. "__esModule" has not been set), then set
-  // "default" to the CommonJS "module.exports" for node compatibility.
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-  mod
-));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/AccessibilityWidget.tsx
@@ -33,30 +23,35 @@ __export(AccessibilityWidget_exports, {
   default: () => AccessibilityWidget_default
 });
 module.exports = __toCommonJS(AccessibilityWidget_exports);
-var import_react = __toESM(require("react"));
+var import_react = require("react");
 var import_lucide_react = require("lucide-react");
 
 // src/AccessibilityPane.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
 function AccessibilityPane({
   children
 }) {
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "accessibilityPanel" }, children));
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "accessibilityPanel", children }) });
 }
 
 // src/AccessibilityButton.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
 function AccessibilityButton(props) {
-  return /* @__PURE__ */ React.createElement("div", { className: "A-ButtonContainer" }, /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "A-ButtonContainer", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
     "button",
     {
       className: "A-Button",
-      onClick: props.onClick
-    },
-    /* @__PURE__ */ React.createElement("span", { className: "A-icon-span" }, props.icon),
-    props.buttonText
-  ));
+      onClick: props.onClick,
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "A-icon-span", children: props.icon }),
+        props.buttonText
+      ]
+    }
+  ) });
 }
 
 // src/AccessibilityWidget.tsx
+var import_jsx_runtime3 = require("react/jsx-runtime");
 var AccessibilityWidget = () => {
   const [isOpen, setIsOpen] = (0, import_react.useState)(false);
   const [fontSize, setFontSize] = (0, import_react.useState)(16);
@@ -76,15 +71,25 @@ var AccessibilityWidget = () => {
   const changeFilter = (newFilter) => {
     setFilter(newFilter);
   };
-  return /* @__PURE__ */ import_react.default.createElement(import_react.default.Fragment, null, /* @__PURE__ */ import_react.default.createElement(
-    "button",
-    {
-      onClick: () => setIsOpen(true),
-      className: "m-4 accessibilityButton",
-      "aria-label": "Open Accessibility Menu"
-    },
-    /* @__PURE__ */ import_react.default.createElement(import_lucide_react.Accessibility, { strokeWidth: 2.5, className: "half-ratio-icon", size: 24, "aria-hidden": "true" })
-  ), isOpen && // Content for the menu
-  /* @__PURE__ */ import_react.default.createElement(AccessibilityPane, null, /* @__PURE__ */ import_react.default.createElement("div", { className: "A-ButtonGrid" }, /* @__PURE__ */ import_react.default.createElement(AccessibilityButton, { onClick: increaseFontSize, icon: /* @__PURE__ */ import_react.default.createElement(import_lucide_react.AArrowUp, { className: "half-ratio-icon" }), buttonText: "Increase Font Size" }), /* @__PURE__ */ import_react.default.createElement(AccessibilityButton, { onClick: decreaseFontSize, icon: /* @__PURE__ */ import_react.default.createElement(import_lucide_react.AArrowDown, { className: "half-ratio-icon" }), buttonText: "Decrease Font Size" }), /* @__PURE__ */ import_react.default.createElement(AccessibilityButton, { onClick: toggleContrast, icon: /* @__PURE__ */ import_react.default.createElement(import_lucide_react.Contrast, { className: "half-ratio-icon" }), buttonText: "Toggle High Contrast" })), /* @__PURE__ */ import_react.default.createElement("div", { className: "A-Pane-CloseButton-Container" }, /* @__PURE__ */ import_react.default.createElement("button", { className: "A-Pane-CloseButton", onClick: () => setIsOpen(false) }, "Close Pane"))));
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+      "button",
+      {
+        onClick: () => setIsOpen(true),
+        className: "m-4 accessibilityButton",
+        "aria-label": "Open Accessibility Menu",
+        children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_lucide_react.Accessibility, { strokeWidth: 2.5, className: "half-ratio-icon", size: 24, "aria-hidden": "true" })
+      }
+    ),
+    isOpen && // Content for the menu
+    /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(AccessibilityPane, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "A-ButtonGrid", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(AccessibilityButton, { onClick: increaseFontSize, icon: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_lucide_react.AArrowUp, { className: "half-ratio-icon" }), buttonText: "Increase Font Size" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(AccessibilityButton, { onClick: decreaseFontSize, icon: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_lucide_react.AArrowDown, { className: "half-ratio-icon" }), buttonText: "Decrease Font Size" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(AccessibilityButton, { onClick: toggleContrast, icon: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_lucide_react.Contrast, { className: "half-ratio-icon" }), buttonText: "Toggle High Contrast" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "A-Pane-CloseButton-Container", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", { className: "A-Pane-CloseButton", onClick: () => setIsOpen(false), children: "Close Pane" }) })
+    ] })
+  ] });
 };
 var AccessibilityWidget_default = AccessibilityWidget;

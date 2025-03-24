@@ -37,6 +37,7 @@ var import_google = require("next/font/google");
 
 // src/ThemeProvider.tsx
 var import_react = __toESM(require("react"));
+var import_jsx_runtime = require("react/jsx-runtime");
 function ThemeProvider({ children }) {
   const [theme, setTheme] = (0, import_react.useState)("light");
   (0, import_react.useEffect)(() => {
@@ -52,7 +53,7 @@ function ThemeProvider({ children }) {
     localStorage.setItem("theme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
   };
-  return /* @__PURE__ */ import_react.default.createElement(ThemeContext.Provider, { value: { theme, toggleTheme } }, children);
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ThemeContext.Provider, { value: { theme, toggleTheme }, children });
 }
 var ThemeContext = import_react.default.createContext(null);
 
@@ -67,8 +68,9 @@ function cn(...inputs) {
 }
 
 // src/Logo.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
 function Logo({ width = 50, height = 50, className }) {
-  return /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
     import_image.default,
     {
       src: "/acmlogo_white.svg",
@@ -81,35 +83,68 @@ function Logo({ width = 50, height = 50, className }) {
 }
 
 // src/Footer.tsx
-function ACMFooter() {
-  return /* @__PURE__ */ React.createElement("div", { className: "internal-footerWrapper" }, /* @__PURE__ */ React.createElement("footer", null, /* @__PURE__ */ React.createElement("div", { className: "internal-footer" }, /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, " "), /* @__PURE__ */ React.createElement(Logo, { height: 50 })), /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, "Resources"), /* @__PURE__ */ React.createElement("a", null, "About Us"), /* @__PURE__ */ React.createElement("a", null, "Officers"), /* @__PURE__ */ React.createElement("a", null, "Github & Contribution")), /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, "Partners"), /* @__PURE__ */ React.createElement("a", null, "OUTspoken"), /* @__PURE__ */ React.createElement("a", null, "Generation Action")), /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, "Policies"), /* @__PURE__ */ React.createElement("a", null, "Test Links")), /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, "PFW Websites"), /* @__PURE__ */ React.createElement("a", null, "Department of Comp. Sci"))), /* @__PURE__ */ React.createElement("div", { className: "internal-disclaimer" }, "This is a PFW-ACM site. The views on this page do not represent the views of Purdue Fort Wayne. ")));
+var import_jsx_runtime3 = require("react/jsx-runtime");
+function Footer() {
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "internal-footerWrapper", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("footer", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "internal-footer", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h4", { children: " " }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Logo, { height: 50 })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h4", { children: "Resources" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { children: "About Us" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { children: "Officers" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { children: "Github & Contribution" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h4", { children: "Partners" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { children: "OUTspoken" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { children: "Generation Action" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h4", { children: "Policies" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { children: "Test Links" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h4", { children: "PFW Websites" }),
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { children: "Department of Comp. Sci" })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "internal-disclaimer", children: "This is a PFW-ACM site. The views on this page do not represent the views of Purdue Fort Wayne, but are sanctioned by a student organization within it. If there are concerns please contact acm@pfw.edu. " })
+  ] }) });
 }
 
 // src/AccessibilityWidget.tsx
-var import_react2 = __toESM(require("react"));
+var import_react2 = require("react");
 var import_lucide_react = require("lucide-react");
 
 // src/AccessibilityPane.tsx
+var import_jsx_runtime4 = require("react/jsx-runtime");
 function AccessibilityPane({
   children
 }) {
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "accessibilityPanel" }, children));
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_jsx_runtime4.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "accessibilityPanel", children }) });
 }
 
 // src/AccessibilityButton.tsx
+var import_jsx_runtime5 = require("react/jsx-runtime");
 function AccessibilityButton(props) {
-  return /* @__PURE__ */ React.createElement("div", { className: "A-ButtonContainer" }, /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "A-ButtonContainer", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(
     "button",
     {
       className: "A-Button",
-      onClick: props.onClick
-    },
-    /* @__PURE__ */ React.createElement("span", { className: "A-icon-span" }, props.icon),
-    props.buttonText
-  ));
+      onClick: props.onClick,
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("span", { className: "A-icon-span", children: props.icon }),
+        props.buttonText
+      ]
+    }
+  ) });
 }
 
 // src/AccessibilityWidget.tsx
+var import_jsx_runtime6 = require("react/jsx-runtime");
 var AccessibilityWidget = () => {
   const [isOpen, setIsOpen] = (0, import_react2.useState)(false);
   const [fontSize, setFontSize] = (0, import_react2.useState)(16);
@@ -129,21 +164,31 @@ var AccessibilityWidget = () => {
   const changeFilter = (newFilter) => {
     setFilter(newFilter);
   };
-  return /* @__PURE__ */ import_react2.default.createElement(import_react2.default.Fragment, null, /* @__PURE__ */ import_react2.default.createElement(
-    "button",
-    {
-      onClick: () => setIsOpen(true),
-      className: "m-4 accessibilityButton",
-      "aria-label": "Open Accessibility Menu"
-    },
-    /* @__PURE__ */ import_react2.default.createElement(import_lucide_react.Accessibility, { strokeWidth: 2.5, className: "half-ratio-icon", size: 24, "aria-hidden": "true" })
-  ), isOpen && // Content for the menu
-  /* @__PURE__ */ import_react2.default.createElement(AccessibilityPane, null, /* @__PURE__ */ import_react2.default.createElement("div", { className: "A-ButtonGrid" }, /* @__PURE__ */ import_react2.default.createElement(AccessibilityButton, { onClick: increaseFontSize, icon: /* @__PURE__ */ import_react2.default.createElement(import_lucide_react.AArrowUp, { className: "half-ratio-icon" }), buttonText: "Increase Font Size" }), /* @__PURE__ */ import_react2.default.createElement(AccessibilityButton, { onClick: decreaseFontSize, icon: /* @__PURE__ */ import_react2.default.createElement(import_lucide_react.AArrowDown, { className: "half-ratio-icon" }), buttonText: "Decrease Font Size" }), /* @__PURE__ */ import_react2.default.createElement(AccessibilityButton, { onClick: toggleContrast, icon: /* @__PURE__ */ import_react2.default.createElement(import_lucide_react.Contrast, { className: "half-ratio-icon" }), buttonText: "Toggle High Contrast" })), /* @__PURE__ */ import_react2.default.createElement("div", { className: "A-Pane-CloseButton-Container" }, /* @__PURE__ */ import_react2.default.createElement("button", { className: "A-Pane-CloseButton", onClick: () => setIsOpen(false) }, "Close Pane"))));
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(import_jsx_runtime6.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+      "button",
+      {
+        onClick: () => setIsOpen(true),
+        className: "m-4 accessibilityButton",
+        "aria-label": "Open Accessibility Menu",
+        children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(import_lucide_react.Accessibility, { strokeWidth: 2.5, className: "half-ratio-icon", size: 24, "aria-hidden": "true" })
+      }
+    ),
+    isOpen && // Content for the menu
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(AccessibilityPane, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "A-ButtonGrid", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(AccessibilityButton, { onClick: increaseFontSize, icon: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(import_lucide_react.AArrowUp, { className: "half-ratio-icon" }), buttonText: "Increase Font Size" }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(AccessibilityButton, { onClick: decreaseFontSize, icon: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(import_lucide_react.AArrowDown, { className: "half-ratio-icon" }), buttonText: "Decrease Font Size" }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(AccessibilityButton, { onClick: toggleContrast, icon: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(import_lucide_react.Contrast, { className: "half-ratio-icon" }), buttonText: "Toggle High Contrast" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "A-Pane-CloseButton-Container", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { className: "A-Pane-CloseButton", onClick: () => setIsOpen(false), children: "Close Pane" }) })
+    ] })
+  ] });
 };
 var AccessibilityWidget_default = AccessibilityWidget;
 
 // src/app/layout.tsx
-var import_react3 = __toESM(require("react"));
+var import_jsx_runtime7 = require("react/jsx-runtime");
 var geistSans = (0, import_google.Geist)({
   variable: "--font-geist-sans",
   subsets: ["latin"]
@@ -157,7 +202,14 @@ var metadata = {
   description: "Generated by create next app"
 };
 function RootLayout({ children }) {
-  return /* @__PURE__ */ import_react3.default.createElement("html", { lang: "en" }, /* @__PURE__ */ import_react3.default.createElement(ThemeProvider, null, /* @__PURE__ */ import_react3.default.createElement("head", null), /* @__PURE__ */ import_react3.default.createElement("body", null, /* @__PURE__ */ import_react3.default.createElement(AccessibilityWidget_default, null), children, /* @__PURE__ */ import_react3.default.createElement(ACMFooter, null))));
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("html", { lang: "en", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)(ThemeProvider, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("head", {}),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("body", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(AccessibilityWidget_default, {}),
+      children,
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer, {})
+    ] })
+  ] }) });
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

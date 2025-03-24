@@ -1,9 +1,9 @@
 import {
-  ACMFooter
-} from "./chunk-NHJPY2BP.mjs";
+  Footer
+} from "./chunk-7XTZBOFU.mjs";
 import "./chunk-HCTWYXU2.mjs";
-import "./chunk-FSG2VSXT.mjs";
+import "./chunk-KBQNZYOO.mjs";
 import "./chunk-V7CNWJT3.mjs";
 export {
-  ACMFooter as default
+  Footer as default
 };

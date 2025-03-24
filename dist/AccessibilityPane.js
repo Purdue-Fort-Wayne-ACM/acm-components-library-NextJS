@@ -22,8 +22,9 @@ __export(AccessibilityPane_exports, {
   default: () => AccessibilityPane
 });
 module.exports = __toCommonJS(AccessibilityPane_exports);
+var import_jsx_runtime = require("react/jsx-runtime");
 function AccessibilityPane({
   children
 }) {
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "accessibilityPanel" }, children));
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "accessibilityPanel", children }) });
 }

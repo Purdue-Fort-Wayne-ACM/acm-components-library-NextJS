@@ -29,7 +29,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/Footer.tsx
 var Footer_exports = {};
 __export(Footer_exports, {
-  default: () => ACMFooter
+  default: () => Footer
 });
 module.exports = __toCommonJS(Footer_exports);
 
@@ -44,8 +44,9 @@ function cn(...inputs) {
 }
 
 // src/Logo.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
 function Logo({ width = 50, height = 50, className }) {
-  return /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
     import_image.default,
     {
       src: "/acmlogo_white.svg",
@@ -58,6 +59,34 @@ function Logo({ width = 50, height = 50, className }) {
 }
 
 // src/Footer.tsx
-function ACMFooter() {
-  return /* @__PURE__ */ React.createElement("div", { className: "internal-footerWrapper" }, /* @__PURE__ */ React.createElement("footer", null, /* @__PURE__ */ React.createElement("div", { className: "internal-footer" }, /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, " "), /* @__PURE__ */ React.createElement(Logo, { height: 50 })), /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, "Resources"), /* @__PURE__ */ React.createElement("a", null, "About Us"), /* @__PURE__ */ React.createElement("a", null, "Officers"), /* @__PURE__ */ React.createElement("a", null, "Github & Contribution")), /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, "Partners"), /* @__PURE__ */ React.createElement("a", null, "OUTspoken"), /* @__PURE__ */ React.createElement("a", null, "Generation Action")), /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, "Policies"), /* @__PURE__ */ React.createElement("a", null, "Test Links")), /* @__PURE__ */ React.createElement("div", { className: "internal-footerFlexItem" }, /* @__PURE__ */ React.createElement("h4", null, "PFW Websites"), /* @__PURE__ */ React.createElement("a", null, "Department of Comp. Sci"))), /* @__PURE__ */ React.createElement("div", { className: "internal-disclaimer" }, "This is a PFW-ACM site. The views on this page do not represent the views of Purdue Fort Wayne. ")));
+var import_jsx_runtime2 = require("react/jsx-runtime");
+function Footer() {
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "internal-footerWrapper", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("footer", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "internal-footer", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h4", { children: " " }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Logo, { height: 50 })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h4", { children: "Resources" }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { children: "About Us" }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { children: "Officers" }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { children: "Github & Contribution" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h4", { children: "Partners" }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { children: "OUTspoken" }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { children: "Generation Action" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h4", { children: "Policies" }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { children: "Test Links" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "internal-footerFlexItem", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h4", { children: "PFW Websites" }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { children: "Department of Comp. Sci" })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "internal-disclaimer", children: "This is a PFW-ACM site. The views on this page do not represent the views of Purdue Fort Wayne, but are sanctioned by a student organization within it. If there are concerns please contact acm@pfw.edu. " })
+  ] }) });
 }

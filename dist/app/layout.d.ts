@@ -1,9 +1,10 @@
+import * as react_jsx_runtime from 'react/jsx-runtime';
 import { Metadata } from 'next';
-import React__default from 'react';
+import React from 'react';
 
 declare const metadata: Metadata;
 declare function RootLayout({ children }: {
-    children: React__default.ReactNode;
-}): React__default.JSX.Element;
+    children: React.ReactNode;
+}): react_jsx_runtime.JSX.Element;
 
 export { RootLayout as default, metadata };

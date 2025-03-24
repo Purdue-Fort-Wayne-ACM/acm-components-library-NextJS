@@ -23,6 +23,7 @@ __export(page_exports, {
   default: () => ComponentTest
 });
 module.exports = __toCommonJS(page_exports);
+var import_jsx_runtime = require("react/jsx-runtime");
 function ComponentTest() {
-  return /* @__PURE__ */ React.createElement(React.Fragment, null);
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, {});
 }

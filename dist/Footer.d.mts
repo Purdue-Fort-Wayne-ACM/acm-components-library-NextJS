@@ -1,5 +1,5 @@
-import * as React from 'react';
+import * as react_jsx_runtime from 'react/jsx-runtime';
 
-declare function ACMFooter(): React.JSX.Element;
+declare function Footer(): react_jsx_runtime.JSX.Element;
 
-export { ACMFooter as default };
+export { Footer as default };

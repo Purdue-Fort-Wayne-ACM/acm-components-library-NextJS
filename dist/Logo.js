@@ -42,8 +42,9 @@ function cn(...inputs) {
 }
 
 // src/Logo.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
 function Logo({ width = 50, height = 50, className }) {
-  return /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
     import_image.default,
     {
       src: "/acmlogo_white.svg",

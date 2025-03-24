@@ -36,6 +36,7 @@ __export(ThemeProvider_exports, {
 });
 module.exports = __toCommonJS(ThemeProvider_exports);
 var import_react = __toESM(require("react"));
+var import_jsx_runtime = require("react/jsx-runtime");
 function ThemeProvider({ children }) {
   const [theme, setTheme] = (0, import_react.useState)("light");
   (0, import_react.useEffect)(() => {
@@ -51,7 +52,7 @@ function ThemeProvider({ children }) {
     localStorage.setItem("theme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
   };
-  return /* @__PURE__ */ import_react.default.createElement(ThemeContext.Provider, { value: { theme, toggleTheme } }, children);
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ThemeContext.Provider, { value: { theme, toggleTheme }, children });
 }
 var ThemeContext = import_react.default.createContext(null);
 var ThemeProvider_default = ThemeProvider;
