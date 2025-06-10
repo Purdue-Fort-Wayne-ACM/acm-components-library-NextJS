@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});var _clsx = require('clsx');var _tailwindmerge = require('tailwind-merge');function i(...n){return _tailwindmerge.twMerge.call(void 0, _clsx.clsx.call(void 0, n))}exports.a = i;
+import{clsx as r}from"clsx";import{twMerge as o}from"tailwind-merge";function i(...n){return o(r(n))}export{i as a};
