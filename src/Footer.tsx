@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from "./Logo";
-import "../styles.css";
+import "./index.css";
 
 
 export default function Footer() {

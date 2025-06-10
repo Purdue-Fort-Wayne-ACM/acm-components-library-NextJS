@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import * as ACMLib from "../";
-import "../../styles.css";
+import "../index.css";
 import React from "react";
 
 const geistSans = Geist({

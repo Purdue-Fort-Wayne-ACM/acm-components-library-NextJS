@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Accessibility, AArrowUp, AArrowDown, Settings, ZoomIn, ZoomOut, Moon, Sun, Eye, Contrast } from 'lucide-react';
 import AccessibilityPane from './AccessibilityPane';
 import AccessibilityButton from './AccessibilityButton';
-import "../styles.css"
+import "./index.css"
 
 const AccessibilityWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
