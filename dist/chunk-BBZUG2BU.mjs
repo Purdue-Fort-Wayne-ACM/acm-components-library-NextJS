@@ -1,1 +1,0 @@
-function n(t){return React.createElement("div",{className:"A-ButtonContainer"},React.createElement("button",{className:"A-Button",onClick:t.onClick},React.createElement("span",{className:"A-icon-span"},t.icon),t.buttonText))}export{n as a};

@@ -6,7 +6,7 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
+    "./dist",
     "styles.css"
   ],
   "scripts": {
@@ -31,5 +31,8 @@
     "@types/react": "19.0.8",
     "tsup": "^8.3.6",
     "typescript": "^5.7.3"
-  }
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  } 
 }

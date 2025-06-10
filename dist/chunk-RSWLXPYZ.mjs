@@ -1,1 +1,0 @@
-import{jsx as n,jsxs as i}from"react/jsx-runtime";function o(t){return n("div",{className:"A-ButtonContainer",children:i("button",{className:"A-Button",onClick:t.onClick,children:[n("span",{className:"A-icon-span",children:t.icon}),t.buttonText]})})}export{o as a};
